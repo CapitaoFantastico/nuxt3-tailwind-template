@@ -1,5 +1,5 @@
 <template>
-  <div>
-    <NuxtWelcome />
+  <div class="flex justify-center p-6">
+    <CardTest />
   </div>
 </template>
