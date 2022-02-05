@@ -8,5 +8,11 @@
   "devDependencies": {
     "nuxt3": "latest",
     "tailwindcss": "^3.0.18"
+  },
+  "dependencies": {
+    "@heroicons/vue": "^1.0.5",
+    "@nuxtjs/composition-api": "^0.31.0",
+    "@pinia/nuxt": "^0.1.8",
+    "pinia": "^2.0.11"
   }
 }

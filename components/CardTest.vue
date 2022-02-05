@@ -1,3 +1,6 @@
+<script setup lang="ts">
+import { BeakerIcon } from "@heroicons/vue/solid";
+</script>
 <template>
   <div class="flex flex-col">
     <div class="block p-6 rounded-t-lg shadow-lg bg-slate-500 max-w-sm">
@@ -5,8 +8,12 @@
         Titulo do card
       </h5>
     </div>
-    <div class="block p-6 bg-white rounded-b-lg shadow-lg max-w-sm">
-      <p class="text-gray-700 text-base">Este é o conteudo do card</p>
+    <div
+      class="block p-6 bg-white dark:bg-gray-800 rounded-b-lg shadow-lg max-w-sm"
+    >
+      <p class="text-gray-700 text-base">
+        <BeakerIcon class="h-5 w-5 text-blue-500" />
+      </p>
       <button
         class="my-3 bg-blue-600 rounded px-3 py-2 text-white font-medium text-xs leading-tight inline-block capitalize shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
       >

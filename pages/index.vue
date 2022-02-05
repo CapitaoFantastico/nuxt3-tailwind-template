@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center p-6">
+  <div class="dark">
     <CardTest />
   </div>
 </template>
