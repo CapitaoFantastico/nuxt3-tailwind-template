@@ -1,13 +1,19 @@
 import { defineStore } from 'pinia'
 
 export const useStore = defineStore('main', {
-    state: () => ({ count: 0 }),
-    getters: {
-        double: (state) => state.count * 2,
-    },
+    state: () => ({
+        darkMode: Boolean
+    }),
+    getters: {},
     actions: {
-        increment() {
-            this.count++
-        }
+        toggleDark() {
+            const isDarkMode = !this.darkMode;
+
+            document.documentElement.classList[isDarkMode ? 'add' : 'remove']('dark')
+
+            localStorage.setItem('darkMode', isDarkMode ? '1' : '0')
+
+            this.darkMode = isDarkMode;
+        },
     }
 })

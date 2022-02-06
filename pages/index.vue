@@ -1,5 +1,5 @@
 <template>
   <div class="dark">
-    <CardTest />
+    <div>Teste</div>
   </div>
 </template>
